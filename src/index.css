@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #060814;
+    --text-primary: #f8fafc;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090d1f;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f294a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00d2ff;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(15, 20, 38, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(35, 47, 88, 0.6);
+}
+
+.glass-panel-glow {
+  background: rgba(15, 20, 38, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 247, 255, 0.3);
+  box-shadow: 0 0 25px rgba(0, 247, 255, 0.15);
+}
+
+.glass-card {
+  background: rgba(21, 28, 54, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cyber-grid {
+  background-image: 
+    linear-gradient(rgba(0, 247, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 247, 255, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.cyber-glow-text {
+  text-shadow: 0 0 10px rgba(0, 247, 255, 0.6), 0 0 20px rgba(157, 78, 221, 0.4);
+}
